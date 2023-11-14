@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{ title }} V2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+    <form (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label position="stacked">Nome</ion-label>
+        <ion-input autocapitalize="on" [(ngModel)]="contact.name" name="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Sobrenome</ion-label>
+        <ion-input autocapitalize="on" [(ngModel)]="contact.surname" name="surname"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Telefone</ion-label>
+        <ion-input autocapitalize="on" [(ngModel)]="contact.phone" name="phone"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">E-mail</ion-label>
+        <ion-input autocapitalize="on" [(ngModel)]="contact.email" name="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Endereço</ion-label>
+        <ion-input autocapitalize="on" [(ngModel)]="contact.address" name="address"></ion-input>
+      </ion-item>
+      <div class="ion-margin-vertical">
+        <ion-button type="submit" color="secondary" expand="block">Salvar</ion-button>
+      </div>
+    </form>
+  </ion-content>

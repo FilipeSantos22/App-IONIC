@@ -1,0 +1,8 @@
+{
+  "name": "CRUD-ionic",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
